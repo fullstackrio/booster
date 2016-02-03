@@ -1,5 +1,5 @@
 jekyll:
-    build: containers/jekyll
+    image: jekyll/jekyll:3.0.2
     command: jekyll serve --watch --host 0.0.0.0 --port 4000
     volumes:
         - ./:/srv/jekyll
